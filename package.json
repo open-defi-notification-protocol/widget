@@ -1,0 +1,18 @@
+{
+  "name": "@open-defi-notification-protocol/open-defi-notifications-widget",
+  "version": "1.0.0",
+  "description": "interactive widget to be included on project dapps",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-defi-notification-protocol/widget.git"
+  },
+  "author": "orbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/open-defi-notification-protocol/widget/issues"
+  },
+  "homepage": "https://github.com/open-defi-notification-protocol/widget#readme"
+}
