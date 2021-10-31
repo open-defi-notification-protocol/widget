@@ -1,10 +1,12 @@
 {
-  "name": "@open-defi-notification-protocol/open-defi-notifications-widget",
-  "version": "1.0.0",
+  "name": "@open-defi-notification-protocol/widget",
+  "version": "0.0.1",
   "description": "Interactive widget to be included on project DAPPs",
   "main": "index.js",
-  "type": "module",
-  "scripts": {},
+  "scripts": {
+    "build" : "browserify index.js -o odnp.min.js",
+    "npm-publish" : "npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/open-defi-notification-protocol/widget.git"
@@ -14,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/open-defi-notification-protocol/widget/issues"
   },
-  "homepage": "https://github.com/open-defi-notification-protocol/widget#readme"
+  "homepage": "https://github.com/open-defi-notification-protocol/widget#readme",
+  "files": [
+    "*.js",
+    "README.md"
+  ]
 }
