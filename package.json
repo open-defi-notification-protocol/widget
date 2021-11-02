@@ -19,6 +19,7 @@
   "homepage": "https://github.com/open-defi-notification-protocol/widget#readme",
   "files": [
     "*.js",
+    "vue",
     "README.md"
   ]
 }
