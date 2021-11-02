@@ -4,6 +4,8 @@ class ODNP {
 
     init() {
 
+        console.debug('Initializing ODNP');
+
         this.mainDiv = document.createElement('div')
 
         this.mainDiv.style = "transition: all 0.4s; pointerEvents:none; opacity: 0; background: rgba(0,0,0,0.2);  position: fixed; width: 100%; height: 100%; display:flex; align-items: center;justify-content: center; top:0; left:0; z-index: 999999;"
@@ -22,6 +24,8 @@ class ODNP {
             colorLight: "#ffffff",
             correctLevel: QRCode.CorrectLevel.H
         })
+
+        console.debug('Initializing ODNP done.');
 
     }
 
