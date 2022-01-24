@@ -7,6 +7,11 @@ to allow users to quickly setup their on-chain event notifications.
 
 1. include this package in your project
 2. create an instance of the class **ODNP** (open defi notification protocol).
+
+```javascript
+const odnp = new ODNP();
+```   
+
 3. on load of your project call the **init** function.
 
 ```javascript
