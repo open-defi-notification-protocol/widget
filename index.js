@@ -26,14 +26,14 @@ class ODNP {
             correctLevel: QRCode.CorrectLevel.H
         })
 
-        console.debug('Initializing ODNP done.');
+        console.debug('Initializing ODNP done.')
 
     }
 
     show(address, projectId) {
 
         this.qrCode.makeCode(
-            address + ' project:' + projectId + ';'
+            'http://onelink.to/9cqqbe' + '?opendefiqr=' + address + 'project:' + projectId + ';'
         )
 
         document.getElementById('odn-wallet-address').innerText = address.slice(0, 6) + '...' + address.slice(-4)
