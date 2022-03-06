@@ -1,7 +1,6 @@
-## Open DeFi Notifications Protocol Widget 
+## Open DeFi Notification Protocol Widget 
 
-This package contains the widget to be included on a project's DAPP or web site 
-to allow users to quickly setup their on-chain event notifications.
+This package contains a button widget to be integrated on a project's web app to allow its users to quickly setup their on-chain event notifications, download the notifications mobile app and get an easy QR for quick setup.
 
 ### Implementation notes
 
