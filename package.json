@@ -1,6 +1,6 @@
 {
   "name": "@open-defi-notification-protocol/widget",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Interactive widget to be included on project DAPPs",
   "main": "index.js",
   "scripts": {
