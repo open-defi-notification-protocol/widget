@@ -27,3 +27,7 @@ odnp.init();
 odnp.show('0xC8da773F54Ce6fcffFd5B8cC1F76542D2B75c412','projectId');
 ```
 
+
+Example (taken from the Tetra staking app):
+![alt text](https://open-defi-notifications.web.app/promo/widget-crop.jpg)
+
