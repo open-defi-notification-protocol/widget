@@ -399,7 +399,7 @@ var l = [[17, 14, 11, 7], [32, 26, 20, 14], [53, 42, 32, 24], [78, 62, 46, 34], 
             c._bSupportDataURI === !0 && c._fSuccess ? c._fSuccess.call(c) : c._bSupportDataURI === !1 && c._fFail && c._fFail.call(c)
         }
 
-        if (this._android && this._android <= 2.1) {
+        if (this && this._android && this._android <= 2.1) {
             var b = 1 / window.devicePixelRatio, c = CanvasRenderingContext2D.prototype.drawImage;
             CanvasRenderingContext2D.prototype.drawImage = function (a, d, e, f, g, h, i, j) {
                 if ("nodeName" in a && /img/i.test(a.nodeName)) for (var l = arguments.length - 1; l >= 1; l--) arguments[l] = arguments[l] * b; else "undefined" == typeof j && (arguments[1] *= b, arguments[2] *= b, arguments[3] *= b, arguments[4] *= b);
