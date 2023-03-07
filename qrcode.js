@@ -32,7 +32,8 @@ function m() {
 
 function n() {
     var a = !1, b = navigator.userAgent;
-    return /android/i.test(b) && (a = !0, aMat = b.toString().match(/android ([0-9]\.[0-9])/i), aMat && aMat[1] && (a = parseFloat(aMat[1]))), a
+    var aMat;
+    return /android/i.test(b) && (a = !0, aMat = b.toString().match(/android ([0-9]+(?:\.[0-9]+)?)/i), aMat && aMat[1] && (a = parseFloat(aMat[1]))), a
 }
 
 function r(a, b) {
