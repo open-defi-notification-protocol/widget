@@ -17,8 +17,34 @@ class ODNP {
         this.mainDiv.onclick = () => this.hide()
 
         window.ODNPWidget = this
-
-        this.mainDiv.innerHTML = `<div onclick="event.stopImmediatePropagation();" style="background: #ffffff; margin: ${window.mobileCheck() ? '1rem' : '0'}; padding: ${window.mobileCheck() ? '2rem 1rem' : '3rem 6rem'}; display: flex; font-family: Arial; flex-direction: column;border-radius: 1.5rem; box-shadow: rgba(0,0,0, 0.3) 0 3rem 10rem 0;"> <div style=" font-size: ${window.mobileCheck() ? '1.5rem' : '2rem'}; font-weight: bold; justify-content: center;text-align: center;">Get free mobile alerts for</br>on-chain events </div> <div style="font-size: ${window.mobileCheck() ? '1rem' : '1.2rem'}; text-align: center; margin-top: ${window.mobileCheck() ? '1rem' : '2rem'};">Get a push notification or even a phone call to make sure you<br/>never lose your funds and you\'re always up to date </div> <div style="display: flex; height: 100%; padding: ${window.mobileCheck() ? '1rem 0' : '2.5rem 0'}; justify-content: center;"> <div style="flex-direction: column; display: flex; align-items: center;"> ${window.mobileCheck() ? '' : '<span style="text-align: center;font-size: 1.5rem;">1.</span>'} <span style="font-weight: bold;font-size: ${window.mobileCheck() ? '1.1rem' : '1.3rem'}; text-align: center; margin-top: ${window.mobileCheck() ? '0' : '1rem'};"> Download the mobile app<br/>"DeFi Notifications"<br/> </span> <img src="https://open-defi-notifications.web.app/widget/assets/icon.png" width="70" style=" margin-top: ${window.mobileCheck() ? '1rem' : '2rem'};"> <img src="https://open-defi-notifications.web.app/widget/assets/DeFiNotificationsTitle.svg" style="margin-top: 1rem;" width="160"/> <button style="background: transparent; border:none; margin-top: ${window.mobileCheck() ? '1rem' : '2.5rem'};" onclick="window.open(\'https://apps.apple.com/us/app/defi-notifications/id1588243632\')"> <img src="https://open-defi-notifications.web.app/widget/assets/appstore.png" style="cursor: pointer;"/> </button> <button style="cursor: pointer !important; background: transparent; border:none; margin-top: 0.5rem;" onclick="window.open(\'https://play.google.com/store/apps/details?id=com.orbs.openDefiNotificationsApp\')"> <img src="https://open-defi-notifications.web.app/widget/assets/playstore.png"/> </button> </div> <div style="flex-direction: column; display: ${window.mobileCheck() ? 'none!important' : 'flex'}; align-items: center; border-left: 0.15rem solid #CBCBCB; margin-left: 4rem; padding-left: 3rem;"> <span style="text-align: center;font-size: 1.5rem;">2.</span> <span style="font-weight: bold;font-size: 1.3rem; text-align: center; margin-top: 1rem; margin-bottom: 3rem;"> Open the mobile app </span> <div id="odn-qrcode"></div><span id="odn-wallet-address" style="font-size: 0.9rem;font-weight: bold;margin-top: 0.5rem"></span> <span style="font-weight: bold;font-size: 1.3rem; text-align: center; margin-top: 2.5rem;"> and scan this QR to select<br/>what to monitor </span> </div> </div> <div style="display: flex; justify-content: center;"> <button style=";cursor: pointer !important; background: #FF007A; color: #ffffff; border:none; border-radius: 1rem;padding: ${window.mobileCheck() ? '.75rem 5rem' : '1rem 6rem'}; font-size: ${window.mobileCheck() ? '1.2rem' : '1.6rem'}; font-weight: bold;" onclick="window.ODNPWidget.hide()"> Close </button> </div> </div>`
+  
+        this.mainDiv.innerHTML = `
+            <div onclick="event.stopImmediatePropagation();" style="background: #ffffff; margin: ${window.mobileCheck() ? '1rem' : '0'}; padding: ${window.mobileCheck() ? '2rem 1rem' : '3rem 6rem'}; display: flex; font-family: Arial; flex-direction: column;border-radius: 1.5rem; box-shadow: rgba(0,0,0, 0.3) 0 3rem 10rem 0;"> 
+                <div style=" font-size: ${window.mobileCheck() ? '1.5rem' : '2rem'}; font-weight: bold; justify-content: center;text-align: center;">Get free mobile alerts for</br>on-chain events </div> 
+                <div style="font-size: ${window.mobileCheck() ? '1rem' : '1.2rem'}; text-align: center; margin-top: ${window.mobileCheck() ? '1rem' : '2rem'};">Get a push notification or even a phone call to make sure you<br/>never lose your funds and you\'re always up to date </div> 
+                <div style="display: flex; height: 100%; padding: ${window.mobileCheck() ? '1rem 0' : '2.5rem 0'}; justify-content: center;"> 
+                    <div style="flex-direction: column; display: flex; align-items: center;"> ${window.mobileCheck() ? '' : '<span style="text-align: center;font-size: 1.5rem;">1.</span>'} <span style="font-weight: bold;font-size: ${window.mobileCheck() ? '1.1rem' : '1.3rem'}; text-align: center; margin-top: ${window.mobileCheck() ? '0' : '1rem'};"> Download the mobile app<br/>"DeFi Notifications"<br/> </span> 
+                        <img src="https://open-defi-notifications.web.app/widget/assets/icon.png" width="70" style=" margin-top: ${window.mobileCheck() ? '1rem' : '2rem'};"> 
+                        <img src="https://open-defi-notifications.web.app/widget/assets/DeFiNotificationsTitle.svg" style="margin-top: 1rem;" width="160"/> 
+                        <button style="background: transparent; border:none; margin-top: ${window.mobileCheck() ? '1rem' : '2.5rem'};" onclick="window.open(\'https://apps.apple.com/us/app/defi-notifications/id1588243632\')"> 
+                            <img src="https://open-defi-notifications.web.app/widget/assets/appstore.png" style="cursor: pointer;"/> 
+                        </button> 
+                        <button style="cursor: pointer !important; background: transparent; border:none; margin-top: 0.5rem;" onclick="window.open(\'https://play.google.com/store/apps/details?id=com.orbs.openDefiNotificationsApp\')"> 
+                            <img src="https://open-defi-notifications.web.app/widget/assets/playstore.png"/> 
+                        </button> 
+                    </div> 
+                    <div style="flex-direction: column; display: ${window.mobileCheck() ? 'none!important' : 'flex'}; align-items: center; border-left: 0.15rem solid #CBCBCB; margin-left: 4rem; padding-left: 3rem;"> 
+                        <span style="text-align: center;font-size: 1.5rem;">2.</span> 
+                        <span style="font-weight: bold;font-size: 1.3rem; text-align: center; margin-top: 1rem; margin-bottom: 3rem;"> Open the mobile app </span> 
+                        <div id="odn-qrcode"></div>
+                        <span id="odn-wallet-address" style="font-size: 0.9rem;font-weight: bold;margin-top: 0.5rem"></span> 
+                        <span style="font-weight: bold;font-size: 1.3rem; text-align: center; margin-top: 2.5rem;"> and scan this QR to select<br/>what to monitor </span> 
+                    </div> 
+                </div> 
+                <div style="display: flex; justify-content: center;"> 
+                    <button style=";cursor: pointer !important; background: #FF007A; color: #ffffff; border:none; border-radius: 1rem;padding: ${window.mobileCheck() ? '.75rem 5rem' : '1rem 6rem'}; font-size: ${window.mobileCheck() ? '1.2rem' : '1.6rem'}; font-weight: bold;" onclick="window.ODNPWidget.hide()"> Close </button> 
+                </div> 
+            </div>`
 
         document.body.appendChild(this.mainDiv)
 
